@@ -1,13 +1,12 @@
 import { Container, LinksContainer } from "./styles";
 
-const ItemRepo = () => {
+const ItemRepo = ({name, language, url}) => {
   return (
     <Container>
-      <h3>Theodoro</h3>
-      <p>P sol ja nasceu la na fazendinha</p>
+      <h3>{name}</h3>
+      <p>{language}</p>
       <LinksContainer>
-        <a href="#">Acessar Repositório</a>
-        <button>Remover</button>
+        <a href={url}>Clique para acessar</a>
       </LinksContainer>
       <hr />
     </Container>
